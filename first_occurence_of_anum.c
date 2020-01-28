@@ -1,5 +1,5 @@
 
-// to find first occurence of a num in a sorted array on log(n) time
+// to find first occurrence of a num in a sorted array on log(n) time
 #include<stdio.h>
  
  int binary_search(int arr[],int lb,int ub,int key)
@@ -9,7 +9,7 @@
      if(key==arr[mid])
      {
          if(arr[mid-1]==key)
-          index=binary_search(arr,lb,mid-1,key);
+          index=binary_search(arr,lb,mid-1,key);// if the left of mid is also equal to key then perform binary search on the left side recursively to find the leftmost index of the key 
 
           else 
           index=mid;
