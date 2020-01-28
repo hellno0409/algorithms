@@ -1,3 +1,5 @@
+
+// to find first occurence of a num in a sorted array on log(n) time
 #include<stdio.h>
  
  int binary_search(int arr[],int lb,int ub,int key)
