@@ -37,7 +37,7 @@ return index;
   if(arr[i]==key)
   return i;
   else 
- i= binary_search(arr,0,i,key);
+ i= binary_search(arr,i/2,i,key);//we perform binary search between i/2 and i since we know that key is greater than i/2 and less than i
  return i;
  }
 
